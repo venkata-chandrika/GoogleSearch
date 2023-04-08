@@ -24,7 +24,9 @@ class GoogleSuggestions extends Component {
     const {suggestionsList} = this.props
     const {searchInput} = this.state
     const searchResults = suggestionsList.filter(eachSuggestion =>
-      eachSuggestion.toLowerCase().includes(searchInput.toLowerCase()),
+      eachSuggestion.suggestion
+        .toLowerCase()
+        .includes(searchInput.toLowerCase()),
     )
 
     return (
@@ -34,7 +36,7 @@ class GoogleSuggestions extends Component {
             src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
             alt="google logo"
             className="google-logo"
-          />
+          />{' '}
           <div className="suggestions-container">
             <div className="search">
               <img
