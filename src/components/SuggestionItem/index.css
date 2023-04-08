@@ -1,0 +1,28 @@
+/* Write your CSS here */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+}
+
+.suggestion {
+  font-size: 18px;
+  color: #475569;
+}
+.arrow {
+  color: #bfbfbf;
+  width: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .arrow {
+    width: 30px;
+  }
+}
